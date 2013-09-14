@@ -1,2 +1,1 @@
-include *.js *.json
-recursive-include static *.js
+recursive-include django_ajax_forms *.js *.json *.html
