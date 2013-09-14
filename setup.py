@@ -8,7 +8,7 @@ setup(
     author='Joshua Johanan',
     url='https://github.com/johanan/django_ajax_forms',
     license='MIT',
-    packages=['django-ajax-forms'],
+    packages=['django_ajax_forms'],
     zip_safe=False,
     include_package_data=True
 )
