@@ -1,0 +1,2 @@
+include *.js *.json
+recursive-include static *.js

@@ -1,0 +1,14 @@
+venv
+*.pyc
+sqlite3.db
+.project
+.pydevproject
+.env
+env.txt
+.coverage
+cover
+.DS_Store
+.settings
+.idea
+staticfiles
+node_modules
