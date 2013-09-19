@@ -11,6 +11,11 @@ if (typeof define === 'function' && define.amd){
     var failFn = function(err, jqxhr){
         for (var field in err)
         {
+            if (jqxhr.status >= 500)
+            {
+                this.prepend(templates.failTemplate({error: 'Something went wrong'}));
+                return;
+            }
 
             var f = this.find('#id_' + field);
             if (err[field] instanceof  Array)
