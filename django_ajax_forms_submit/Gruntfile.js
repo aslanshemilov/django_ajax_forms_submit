@@ -17,13 +17,13 @@ module.exports = function(grunt) {
     },
     concat: {
       full: {
-        src: ['static/django-ajax-forms/js/util/form.js', 'static/django-ajax-forms/js/template/ajaxforms.js',
-            'static/django-ajax-forms/js/util/ajaxformsutils.js', 'static/django-ajax-forms/js/util/ajaxformstemplateutils.js' ],
-        dest: 'static/django-ajax-forms/js/<%= pkg.name %>.js'
+        src: ['static/django-ajax-forms-submit/js/util/form.js', 'static/django-ajax-forms-submit/js/template/ajaxforms.js',
+            'static/django-ajax-forms-submit/js/util/ajaxformsutils.js', 'static/django-ajax-forms-submit/js/util/ajaxformstemplateutils.js' ],
+        dest: 'static/django-ajax-forms-submit/js/<%= pkg.name %>.js'
       },
       noTemplate: {
-        src: ['static/django-ajax-forms/js/util/form.js', 'static/django-ajax-forms/js/util/ajaxformsutils.js' ],
-        dest: 'static/django-ajax-forms/js/<%= pkg.name %>-notemplate.js'
+        src: ['static/django-ajax-forms-submit/js/util/form.js', 'static/django-ajax-forms-submit/js/util/ajaxformsutils.js' ],
+        dest: 'static/django-ajax-forms-submit/js/<%= pkg.name %>-notemplate.js'
       }
     },
     uglify: {
@@ -33,12 +33,12 @@ module.exports = function(grunt) {
 
       full: {
         files: {
-            'static/django-ajax-forms/js/<%= pkg.name %>.min.js': ['<%= concat.full.dest %>']
+            'static/django-ajax-forms-submit/js/<%= pkg.name %>.min.js': ['<%= concat.full.dest %>']
         }
       },
       noTemplate: {
         files: {
-            'static/django-ajax-forms/js/<%= pkg.name %>-notemplate.min.js': ['<%= concat.noTemplate.dest %>']
+            'static/django-ajax-forms-submit/js/<%= pkg.name %>-notemplate.min.js': ['<%= concat.noTemplate.dest %>']
         }
       }
     },
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
             define: false
           }
       },
-    files: ['static/django-ajax-forms/js/template/*.js', 'static/django-ajax-forms/js/util/*.js']
+    files: ['static/django-ajax-forms-submit/js/template/*.js', 'static/django-ajax-forms-submit/js/util/*.js']
     }
   });
 
