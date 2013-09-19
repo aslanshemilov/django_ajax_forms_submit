@@ -1,1 +1,1 @@
-recursive-include django_ajax_forms *.js *.json *.html
+recursive-include django_ajax_forms_submit *.js *.json *.html
